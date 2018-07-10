@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+
+  <script id="skill" type="text/x-handlebars-template">
+        <li>
+          <div>
+            <p>{{easyPointsSpent}}/{{easyPointsNeeded}}</p>
+            <p>{{mediumPointsSpent}}/{{mediumPointsNeeded}}</p>
+            <p>{{hardPointsSpent}}/{{hardPointsNeeded}}</p>
+          </div>
+  
+          <p><span>{{skill}}:</span> {{details}}</p>
+  
+        </li>
+      </script>
+
+</head>
+<body>
+  <header>
+    <nav></nav>
+  </header>
+
+  <main>
+    <h1>One Deck Dungeon</h1>
+
+    <section>
+
+      <label for="Hero">Hero</label>
+      <input type="text" value="" name="Hero">
+      <label for="Name">Name</label>
+      <input type="text" value="" name="Name">
+
+      <ul>
+        <li>Any Dungeon</li>
+        <li>Medium/Hard</li>
+        <li>Hard Only</li>
+      </ul>
+
+      <ul>
+        <li>Complete a Floor x1</li> <!-- TODO: add checkmarks-->
+        <li>Level Up x1</li>
+        <li>Defeat a Boss x3</li>
+      </ul>
+
+      <ul>miscelaneous Buttons
+        <li><button>Start a dungeon</button></li>
+      </ul>
+    </section>
+
+   
+    <div>
+      <section id="basic-skills"></section>
+    </div>
+  </main>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
